@@ -22,7 +22,9 @@ const NavBarLink = (props: NavBarLinkProps) => {
     <Link
       href={href}
       className={`flex items-center justify-center gap-2  text-sm  ${
-        preSelected ? " border-neutral-200 font-medium" : ""
+        preSelected
+          ? " border-neutral-200 font-medium underline underline-offset-8"
+          : ""
       } rounded-lg p-2 hover:bg-neutral-100`}
     >
       {icon} {text}
